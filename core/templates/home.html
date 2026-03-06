@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Home - IBR Foundation{% endblock %}
+{% block content %}
+<section class="hero" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('{% static 'images/BG.jpg' %}'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <div class="container">
+        <h1>IBR Foundation</h1>
+        <p class="tagline">Building stronger communities through outreach and impact</p>
+        <div class="hero-buttons">
+            <a href="/projects/" class="btn">View Projects →</a>
+            <a href="/donate/" class="btn btn-outline">❤️ Donate</a>
+        </div>
+    </div>
+</section>
+
+<section class="stats-section">
+    <div class="container">
+          
+      <h2 class="custom-title">Building Stronger Communities</h2>
+      <p class="custom-tagline">Making a difference through youth development, education, environmental care, and community support</p>
+    
+        <div class="grid grid-3">
+            <div class="stat-card">
+                <div class="stat-number" style="color: #ef46bc;">8+</div>
+                <div class="stat-label">Active Projects</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" style="color: #3b82f6;">500+</div>
+                <div class="stat-label">Lives Touched</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" style="color: #f97316;">100%</div>
+                <div class="stat-label">Community Focused</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="info-cards">
+    <div class="container grid grid-3">
+        <div class="card">
+            <h3>Our Purpose</h3>
+            <p>Dedicated to creating meaningful change and empowering communities through strategic initiatives and compassionate action.</p>
+        </div>
+        <div class="card">
+            <h3>What We Do</h3>
+            <p>We develop and implement impactful programs designed to address critical challenges and build sustainable solutions for lasting growth.</p>
+        </div>
+        <div class="card">
+            <h3>Get Involved</h3>
+            <p>Join our movement. Whether as a volunteer, partner, or supporter, your contribution helps us create the change we envision.</p>
+        </div>
+    </div>
+</section>
+
+<section class="mission-section">
+    <div class="container">
+        <h2>Join Our Mission</h2>
+        <p class="mission-tagline">Every contribution makes a lasting impact</p>
+        <p class="mission-support">Support Our Work ❤️</p>
+    </div>
+</section>
+{% endblock %}

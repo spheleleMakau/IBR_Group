@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Projects - IBR Foundation{% endblock %}
+{% block content %}
+<section class="projects-section">
+    <div class="container">
+        <h1>Our Projects</h1>
+        <p class="projects-subtitle">Driving meaningful change through strategic initiatives</p>
+        <div class="grid project-grid">
+            <!-- Example project card: Copy and fill in for each project -->
+            <div class="card project-card">
+              
+                    <img src="{% static 'images/sports.jpg' %}" alt="Star MJ Foundation Soccer Tournament" class="project-image">
+               
+                <h3>Star MJ Foundation Soccer Tournament</h3>
+                <p>Youth development through sport.</p>
+            </div>
+
+            <div class="card project-card">
+                <a href="YOUR_PROJECT_LINK">
+                    <img src="{% static 'images/YOUR_IMAGE.jpg' %}" alt="Life Skills Program at Orphanage" class="project-image">
+                </a>
+                <h3>Life Skills Program at Orphanage</h3>
+                <p>Skills for confidence and growth.</p>
+                <span class="read-more" onclick="openModal('soccerModal')">Read More</span>
+            </div>
+
+             <div class="card project-card">
+                <a href="YOUR_PROJECT_LINK">
+                    <img src="{% static 'images/YOUR_IMAGE.jpg' %}" alt="Rustenburg CBD Cleanup" class="project-image">
+                </a>
+                <h3>Rustenburg CBD Cleanup</h3>
+                <p>Cleaner streets, stronger community.</p>
+            </div>
+
+             <div class="card project-card">
+                <a href="YOUR_PROJECT_LINK">
+                    <img src="{% static 'images/YOUR_IMAGE.jpg' %}" alt="Fire Safety Awareness at Local School" class="project-image">
+                </a>
+                <h3>Fire Safety Awareness at Local School</h3>
+                <p>Safety education for learners.</p>
+            </div>
+
+            <div class="card project-card">
+                <a href="YOUR_PROJECT_LINK">
+                    <img src="{% static 'images/drive.jpg' %}" alt="Dream Drive" class="project-image">
+                </a>
+                <h3>Dream Drive</h3>
+                <p>Motivation and career inspiration.</p>
+            </div>
+
+             <div class="card project-card">
+                <a href="YOUR_PROJECT_LINK">
+                    <img src="{% static 'images/YOUR_IMAGE.jpg' %}" alt="Agricultural Initiative" class="project-image">
+                </a>
+                <h3>Agricultural Initiative</h3>
+                <p>Food gardens and seed support.</p>
+            </div>
+
+              <div class="card project-card">
+                <a href="YOUR_PROJECT_LINK">
+                    <img src="{% static 'images/YOUR_IMAGE.jpg' %}" alt="Old Age Home Visit" class="project-image">
+                </a>
+                <h3>Old Age Home Visit</h3>
+                <p>Care and dignity for elders.</p>
+            </div>
+
+                   <div class="card project-card">
+                <a href="YOUR_PROJECT_LINK">
+                    <img src="{% static 'images/feedingS.jpg' %}" alt="Community Outreach Program" class="project-image">
+                </a>
+                <h3>Community Outreach Program</h3>
+                <p>Supporting families in need.</p>
+            </div>
+            <!-- Copy the above block for each project, and fill in the image, title, description, and link manually -->
+        </div>
+    </div>
+</section>
+{% endblock %}

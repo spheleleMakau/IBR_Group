@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}IBR Foundation{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="site-header navbar">
+        <div class="container">
+            <a href="/" class="brand">
+                <img src="{% static 'images/logo2.png' %}" alt="logo" class="logo-img">
+            </a>
+            <nav class="site-nav">
+                <ul class="nav-links">
+                    <li class="nav-item"><a href="/">Home</a></li>
+                    <li class="nav-item"><a href="/projects/">Projects</a></li>
+                    <li class="nav-item"><a href="/donate/">Donate</a></li>
+                    <li class="nav-item"><a href="/contact/">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                <img src="{% static 'images/logo2.png' %}" alt="logo" class="logo-img">
+                    <p class="footer-tagline">Building stronger communities through outreach and impact</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="/">Home</a>
+                    <a href="/projects/">Projects</a>
+                    <a href="/donate/">Donate</a>
+                    <a href="/contact/">Contact</a>
+                </div>
+                <div class="footer-section footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>📞 <a href="tel:0633112552">063 311 2552</a></p>
+                    <p>📍 <span>8 Stoneridge office park<br>Green stone, Modderfontein<br>Johannesburg, 1609</span></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Made with ❤️ by IBR Foundation<br>© 2026 IBR Foundation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
