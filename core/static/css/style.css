@@ -255,7 +255,7 @@ footer.site-footer .container {
 
 /* BUTTONS */
 .btn {
-    background: #d946ef;
+    background: rgb(254, 0, 174); 
     color: #ffffff;
     padding: 1rem 2.5rem;
     text-decoration: none;
@@ -263,15 +263,15 @@ footer.site-footer .container {
     transition: all 0.3s ease;
     font-weight: 600;
     display: inline-block;
-    border: 2px solid #d946ef;
+    border: 2px solid rgb(254, 0, 174); 
     cursor: pointer;
 }
 
 .btn:hover {
-    background: #e44e80;
-    border-color: #e44e80;
+    /* background: #e44e80;
+    border-color: #e44e80; */
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(217, 70, 239, 0.3);
+    box-shadow: 0 8px 24px rgb(254, 0, 174); 
 }
 
 .btn-outline {
@@ -485,4 +485,20 @@ section h2 {
 .projects-subtitle{
     text-align: center;
     color:  #b0b9c1;
+}
+
+.mission-support{
+    display: inline-block;       
+    background-color : rgb(254, 0, 174); 
+    color: #fff;                 
+    padding: 10px 20px;          
+    border-radius: 8px;          
+    font-weight: 600;            
+    cursor: pointer;           
+    text-align: center;          
+    transition: transform 0.2s;  
+}
+
+.mission-support:hover{
+    transform: scale(1.05);      /* slight zoom on hover */
 }
