@@ -10,3 +10,5 @@ from django.core.wsgi import get_wsgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'IBR_Group.settings')
 
 application = get_wsgi_application()
+
+print("PORT =", os.environ.get("PORT"))
