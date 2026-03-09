@@ -414,10 +414,9 @@ section h2 {
     margin-bottom: 1.5rem;
 }
 
-.contact-card strong, .donate-card strong {  color: rgb(254, 0, 174)
-}
-.contact-card a, .donate-card a { color: rgb(254, 0, 174);
- font-weight: 600; }
+
+
+
 
 .donate-card ul {
     list-style: none;
