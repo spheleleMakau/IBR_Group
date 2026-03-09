@@ -12,7 +12,8 @@ SECRET_KEY = 'replace-this-with-a-secure-key'
 DEBUG = False
 
 
-ALLOWED_HOSTS = ['ibr-group.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['ibr-foundation.onrender.com', 'localhost', '127.0.0.1']
+
 # Application definition
 
 INSTALLED_APPS = [
