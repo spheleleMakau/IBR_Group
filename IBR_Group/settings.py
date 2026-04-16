@@ -12,7 +12,16 @@ SECRET_KEY = 'replace-this-with-a-secure-key'
 DEBUG = False
 
 
-ALLOWED_HOSTS = ['ibr-foundation.onrender.com', 'localhost', '127.0.0.1']
+render_hosts = os.environ.get('RENDER_EXTERNAL_HOSTNAME', '')
+
+ALLOWED_HOSTS = [
+    "ibrfoundation.co.za",
+    "www.ibrfoundation.co.za",
+    ".onrender.com",
+]
+
+if render_hosts:
+    ALLOWED_HOSTS += render_hosts.split(',')
 
 # Application definition
 
